@@ -71,13 +71,13 @@ class Products extends CI_Controller
 				$mail->SMTPSecure = "tls";
 				$mail->Port       = 587;
 				$mail->Host       = "smtp.gmail.com";
-				$mail->Username   = "dev2.livasys@gmail.com";
-				$mail->Password   = "dev2monika"; 
+				$mail->Username   = "example@gmail.com";
+				$mail->Password   = "*******"; 
 			   
-				$mail->setFrom('monikaverma0803@gmail.com', 'test');
-				$mail->addReplyTo('monikaverma0803@gmail.com', 'test'); 
+				$mail->setFrom('example@gmail.com', 'test');
+				$mail->addReplyTo('example@gmail.com', 'test'); 
 				/* Add a recipient */
-				$mail->addAddress($to); //('dev2.livasys@gmail.com');
+				$mail->addAddress($to); //('example@gmail.com');
 				
 				/* Email subject */
 				$mail->Subject = $subject;//'Send Email via SMTP using PHPMailer in CodeIgniter';
